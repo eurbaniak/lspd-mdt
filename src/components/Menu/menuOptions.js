@@ -1,23 +1,27 @@
 export const menuOptions = [
   {
     id: 1,
-    name: "OPtion1",
-    path: "/search",
+    name: "Panel",
+    path: "/",
   },
   {
     id: 2,
-    name: "OPtion1",
+    name: "People",
+    path: "/people",
   },
   {
     id: 3,
-    name: "OPtion1",
+    name: "Events",
+    path: "/events",
   },
   {
     id: 4,
-    name: "OPtion1",
+    name: "Vehicles",
+    path: "/vehicles",
   },
   {
     id: 5,
-    name: "OPtion1",
+    name: "Reports",
+    path: "/reports",
   },
 ];

@@ -1,0 +1,16 @@
+.panel {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.panel-tab {
+    background-color: var(--blue);
+    padding: 20px;
+    width: 33%;
+    margin: 10px;
+}
+
+.panel-tab > h3 {
+    text-align: center;
+}

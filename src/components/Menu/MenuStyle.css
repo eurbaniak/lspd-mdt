@@ -6,6 +6,8 @@
 
 .option {
     padding: 10px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .option > p {
@@ -15,4 +17,9 @@
 .option:hover {
     background-color: var(--light-blue);
     cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--white);
 }

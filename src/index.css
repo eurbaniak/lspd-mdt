@@ -4,8 +4,15 @@
   line-height: 24px;
   font-weight: 400;
 
+  /* palette */
+  --blue: #1C3879;
+  --light-blue: #607EAA;
+  --light: #EAE3D2;
+  --white: #F9F5EB;
+  /* */
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--white);
   background-color: #242424;
 
   font-synthesis: none;
@@ -17,19 +24,11 @@
 
 body {
   margin: 0;
-  --blue: #464686;
-  --light-blue: #7979B9;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }

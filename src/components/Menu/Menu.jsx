@@ -7,9 +7,9 @@ const Menu = () => {
   return (
     <div className="menu">
       {menuOptions.map(({ id, name, path }) => (
-        <div key={id} className="option">
-          <Link to={path || "/"}>{name}</Link>
-        </div>
+        <Link key={id} className="link" to={path || "/"}>
+          <div className="option">{name}</div>
+        </Link>
       ))}
     </div>
   );
