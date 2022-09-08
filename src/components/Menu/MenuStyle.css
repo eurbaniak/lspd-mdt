@@ -1,0 +1,18 @@
+.menu {
+    background-color: var(--blue);
+    width: 25%;
+    height: 100vh;
+}
+
+.option {
+    padding: 10px;
+}
+
+.option > p {
+    padding-left: 50px;
+}
+
+.option:hover {
+    background-color: var(--light-blue);
+    cursor: pointer;
+}
