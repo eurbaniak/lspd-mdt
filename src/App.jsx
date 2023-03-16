@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu";
 import Panel from "./components/Panel/Panel";
 import People from "./components/People/People";
 import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 import { useAuth } from "./userContext";
 
 const App = () => {
@@ -26,7 +27,10 @@ const App = () => {
             </div>
           </div>
         ) : (
-          <Login />
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
         )}
       </BrowserRouter>
     </div>

@@ -9,8 +9,8 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h1>LSPD</h1>
-      {user ? <button onClick={() => signOut(auth)}>Logout</button> : null}
+      <h1>Police</h1>
+      {user.user ? <button onClick={() => signOut(auth)}>Logout</button> : null}
     </div>
   );
 };
