@@ -6,16 +6,16 @@ import Menu from "./components/Menu/Menu";
 import Panel from "./components/Panel/Panel";
 import People from "./components/People/People";
 import Login from "./components/Login/Login";
-import { auth } from "./firebase";
+import { useAuth } from "./userContext";
 
 const App = () => {
-  const [user, setUser] = useState(false);
+  const { user } = useAuth();
+
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        {!user && <Login />}
-        {user && (
+        {user ? (
           <div className="main">
             <Menu />
             <div className="container">
@@ -25,6 +25,8 @@ const App = () => {
               </Routes>
             </div>
           </div>
+        ) : (
+          <Login />
         )}
       </BrowserRouter>
     </div>
