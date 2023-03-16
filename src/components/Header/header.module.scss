@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    
+    a {
+        background-color: var(--blue);
+        outline: none;
+        border-bottom: 2px solid var(--light);
+        padding: 5px;
+
+        &:hover{ 
+            background-color: var(--light-blue);
+            cursor: pointer;
+        }
+    }
+}

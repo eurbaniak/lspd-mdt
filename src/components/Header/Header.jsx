@@ -2,15 +2,15 @@ import React from "react";
 import { useAuth } from "../../userContext";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase";
-import "./headerStyle.css";
+import style from "./header.module.scss";
 
 const Header = () => {
   const user = useAuth();
 
   return (
-    <div className="header">
+    <div className={style.header}>
       <h1>Police</h1>
-      {user.user ? <button onClick={() => signOut(auth)}>Logout</button> : null}
+      {user.user ? <a onClick={() => signOut(auth)}>Logout</a> : null}
     </div>
   );
 };
